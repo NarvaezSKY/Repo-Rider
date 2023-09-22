@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:v</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <label for="Mes">Mes: </label>
+  <select name="Mes" id="mes">
+    <option value="Ene">Enero</option>
+    <option value="Feb">Febrero</option>
+    <option value="Mar">Marzo</option>
+    <option value="Abr">Abril</option>
+    <option value="May">Mayo</option>
+    <option value="Jun">Junio</option>
+    <option value="Jul">Julio</option>
+    <option value="Ago">Agosto</option>
+    <option value="Sep">Septiembre</option>
+    <option value="Oct">Octubre</option>
+    <option value="Nov">Noviembre</option>
+    <option value="Dic">Diciembre</option>
+  </select>
+
+  <label for="Año">Año: </label>
+  <select name="Año" id="año">
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+  </select>
+  <label for="Trimestre">Trimestre: </label>
+  <input type="number" id="trimestre">
+
+    <div>
+        <label class="radio-inline">
+            <input type="radio" name="Tipo" id="radio" value="ganas" checked="checked">ganas
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="Tipo" id="radio" value="pierdes">pierdes
+        </label>
+    </div>
+    <label for="date">fecha de evaluacion</label>
+<input type="date" id="fecha"> 
+<br>
+
+<label for="competencia">Competencia</label>
+
+<div id="contenedor">
+<select name="seleccionable" id="select">
+    <option value="" disabled selected>selecciona una opccion</option>
+    <option value="diseño">diseño</option>
+    <option value="analisis">analisis</option>
+</select>
+</div>
+<!-- <button id="verificar">elegir</button> -->
+
+
+<br>
+<p></p>
+    <button id="Boton" onclick=" document.getElementById(datos(fecha.value, mes.value, año.value, trimestre.value, radio=document.querySelector('input[name=Tipo]:checked').value)), mostrar">Datos</button>
+
+
+<div id="content">   
+    <p id="contenido">a</p>
+</div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
